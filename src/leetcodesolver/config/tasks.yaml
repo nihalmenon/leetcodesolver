@@ -1,0 +1,26 @@
+research_task:
+  description: >
+    Search for the entire {question} question and its specifications. 
+    No need to determine solutions, just make sure to understand and output the details of the question.
+  expected_output: >
+    The complete question and specifications.
+  agent: researcher
+
+developer_task:
+  description: >
+    Take in the question and specifications.
+    Create a thoroughly explained, efficient solution along with the code in C++. 
+    Explain the algorithm working on a few specific examples.
+  expected_output: >
+    A detailed solution with C++ code and explanations of the algorithm on specific examples.
+  agent: developer
+
+animator_task:
+  description: >
+    Use Manim community version to animate the algorithm provided by the developer working on the examples provided by the developer.
+    Make the animation high quality. If the algorithm iterates through elements, show that happening. 
+    Be very visual, meaning show conditions being checked etc.
+    Show the data structures used as they change dynamically and make sure they are easily understood. 
+  expected_output: >
+    An animation python file demonstrating the algorithm on the provided examples.
+  agent: animator

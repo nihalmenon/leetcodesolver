@@ -1,0 +1,1 @@
+The Two Sum problem can be solved using a HashMap approach in O(n), where n is the number of elements in the input array. This solution has a high time complexity due to the use of a hash map, but it provides an efficient way to find two numbers that add up to a given target sum.

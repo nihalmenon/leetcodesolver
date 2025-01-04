@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "leetcodesolver"
+version = "0.1.0"
+description = "LeetcodeSolver using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.70.1,<1.0.0" }
+
+
+[tool.poetry.scripts]
+leetcodesolver = "leetcodesolver.main:run"
+run_crew = "leetcodesolver.main:run"
+train = "leetcodesolver.main:train"
+replay = "leetcodesolver.main:replay"
+test = "leetcodesolver.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
