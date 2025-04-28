@@ -24,3 +24,10 @@ animator_task:
   expected_output: >
     An animation python file demonstrating the algorithm on the provided examples.
   agent: animator
+
+generate_animation_video_task:
+  description: >
+    Generate a video from the animation script created by the animator.
+  expected_output: >
+    A video file (animation_video.mp4) that visualizes the algorithm.
+  agent: animator

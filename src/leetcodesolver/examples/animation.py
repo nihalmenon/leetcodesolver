@@ -72,11 +72,3 @@ class Example(Scene):
         if num_map == VGroup():
             text = Text("No solution found!", color=RED)
             self.add(text)
-
-def generate_animation_video():
-    """
-    Generate a video from the animation script.
-    """
-    # Render the animation
-    scene = TwoSumAnimation()
-    scene.render() 

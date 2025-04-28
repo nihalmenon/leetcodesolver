@@ -2,7 +2,7 @@
 import sys
 from leetcodesolver.crew import LeetcodesolverCrew
 
-# This main file is intended to be a way for your to run your
+# This main file is intended to be a way for you to run your
 # crew locally, so refrain from adding necessary logic into this file.
 # Replace with inputs you want to test with, it will automatically
 # interpolate any tasks and agents information
@@ -11,8 +11,10 @@ def run():
     """
     Run the crew.
     """
+    # Use command-line argument for the problem name if provided, otherwise default to 'Leetcode 1 TwoSum'
+    problem_name = sys.argv[1] if len(sys.argv) > 1 else 'Leetcode 1 TwoSum'
     inputs = {
-        'question': 'Leetcode 1 TwoSum'
+        'question': problem_name
     }
     LeetcodesolverCrew().crew().kickoff(inputs=inputs)
 

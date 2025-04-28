@@ -62,6 +62,13 @@ class LeetcodesolverCrew():
 			output_file='animation.py',
 		)
 
+	@task
+	def generate_animation_video_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['generate_animation_video_task'],
+			output_file='animation_video.mp4',
+		)
+
 	@crew
 	def crew(self) -> Crew:
 		"""Creates the Leetcodesolver crew"""
